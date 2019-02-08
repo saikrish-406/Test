@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container width">
   <form [formGroup]="loginForm" (ngSubmit)="validateData()">
     <div *ngIf="errorMessage" class="alert alert-danger">
       {{errorMessage}}
     </div>
-    <h1>LogInForm</h1>
+    <h1 class="align">LogInForm</h1>
     <div class="form-group">
       <label>UserName</label>
       <input type="text" class="form-control" placeholder="Enter UserName / Email / Numbber" formControlName="username">
@@ -33,7 +33,7 @@
 
 
 
-    <button [disabled]="!loginForm.valid" type="submit" class="btn btn-primary">LogIn</button>
+    <button [disabled]="!loginForm.valid" type="submit" class="btn btn-primary btn-block">LogIn</button>
   </form>
 
 </div>
