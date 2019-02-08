@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="display" *ngIf="status"><h1>{{errorMessage}}</h1></div>
+  <div class="card" *ngIf="!status">
+    <div class="card-header bg-primary">
+      User Details
+    </div>
+    <div class="card-body" *ngFor="let data of userData">
+      <div>Name:{{data.name}}</div>
+      <div>UserName:{{data.username}}</div>
+      <div>Password:{{data.password}}</div>
+      <div>ConfirmPassword:{{data.confirmPassword}}</div>
+      <div>Email:{{data.email}}</div>
+      <div>Number:{{data.number}}</div>
+      <div>Address:{{data.address}}</div>
+    </div>
+  </div>
+
+</div>
